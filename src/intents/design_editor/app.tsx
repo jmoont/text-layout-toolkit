@@ -35,7 +35,7 @@ export const App = () => {
 
   const t = {
     appTitle: intl.formatMessage({
-      defaultMessage: "Text & Layout Toolkit",
+      defaultMessage: "Text & Layout Kit",
       description: "Name of the app, shown on the home screen.",
     }),
     appIntro: intl.formatMessage({

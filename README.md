@@ -1,4 +1,4 @@
-# Text & Layout Toolkit (Canva app)
+# Text & Layout Kit (Canva app)
 
 A Canva app that bundles three tools for things the Canva editor can't do natively:
 
