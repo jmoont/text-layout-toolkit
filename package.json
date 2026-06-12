@@ -1,6 +1,6 @@
 {
-  "name": "canva-apps-sdk-starter-kit",
-  "description": "A boilerplate for creating Canva Apps.",
+  "name": "text-layout-toolkit",
+  "description": "Canva app: paragraph spacing, wrap text around images, and QR codes.",
   "engines": {
     "node": "^22 || ^24"
   },

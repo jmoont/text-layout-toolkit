@@ -3,42 +3,49 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Privacy Policy — QR Code Generator for Canva</title>
+    <title>Privacy Policy — Text &amp; Layout Toolkit for Canva</title>
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
     <main>
       <header>
-        <a class="brand" href="../">QR Code Generator</a>
+        <a class="brand" href="../">Text &amp; Layout Toolkit</a>
       </header>
 
       <h1>Privacy Policy</h1>
-      <p class="muted">Last updated: 7 May 2026</p>
+      <p class="muted">Last updated: 12 June 2026</p>
 
-      <p>This Privacy Policy explains what happens to information when you use the <strong>QR Code Generator</strong> Canva app (the "App"). The short version: the App is a thin client that runs inside Canva. It does not have its own backend, does not collect personal information, and does not transmit your inputs to any third-party server other than Canva itself.</p>
+      <p>This Privacy Policy explains what happens to information when you use the <strong>Text &amp; Layout Toolkit</strong> Canva app (the "App"). The short version: the App is a thin client that runs inside Canva. It has no backend of its own, does not collect personal information, and does not transmit your content or inputs to any third-party server other than Canva itself.</p>
 
-      <h2>1. What the App collects</h2>
-      <p>The App collects the following inputs you provide while using it:</p>
+      <h2>1. What the App works with</h2>
+      <p>The App provides three tools, each of which operates only on content you explicitly act on:</p>
       <ul>
-        <li>The URL you type into the URL field.</li>
-        <li>The foreground and background colors you choose.</li>
-        <li>The transparent-background and quiet-zone toggles.</li>
+        <li><strong>Paragraph spacing</strong> reads the text of the text box you have selected so it can re-insert evenly-sized blank lines between paragraphs.</li>
+        <li><strong>Wrap text around an image</strong> reads the position and size of the elements on your current page, and the text of the relevant text box, so it can add line breaks that flow the text around the image.</li>
+        <li><strong>QR code</strong> uses the URL you type and the colors and options you choose to generate a QR code image.</li>
       </ul>
-      <p>These inputs are used <em>only</em> to generate the QR code SVG locally inside the Canva iframe. The App does not maintain its own server and does not log, store, or transmit your inputs anywhere outside Canva.</p>
+      <p>All of this processing happens <em>locally</em> inside the Canva iframe in your browser. The App does not maintain its own server and does not log, store, or transmit your text, designs, or inputs anywhere outside Canva.</p>
 
-      <h2>2. How the QR code reaches your design</h2>
-      <p>To insert the generated QR code into your Canva design, the App calls Canva's official asset-upload and design-element APIs. Canva receives the rendered SVG so it can place it on your canvas. Your use of Canva is governed by <a href="https://www.canva.com/policies/privacy-policy/">Canva's Privacy Policy</a>.</p>
+      <h2>2. How changes reach your design</h2>
+      <p>To read your selection and write changes back into your design, the App calls Canva's official Apps SDK APIs (selection, design-editing, and asset-upload). Canva processes that content so it can update your canvas. Your use of Canva is governed by <a href="https://www.canva.com/policies/privacy-policy/">Canva's Privacy Policy</a>.</p>
 
       <h2>3. What the App does <em>not</em> do</h2>
       <ul>
         <li>It does not use cookies or local storage to track you.</li>
         <li>It does not include analytics, advertising, or tracking SDKs.</li>
         <li>It does not contact any third-party server other than Canva.</li>
-        <li>It does not access your designs, files, or account information beyond what is necessary to insert the QR code element you explicitly request.</li>
+        <li>It does not access your designs, files, or account information beyond what is necessary to perform the action you explicitly request.</li>
+        <li>It does not retain a copy of your content after the action completes.</li>
       </ul>
 
       <h2>4. Permissions</h2>
-      <p>The App requests the <code>canva:design:content:write</code> scope from Canva so that it can insert the QR code into your active design. It does not request read access to your design content.</p>
+      <p>The App requests the following scopes from Canva, used only to perform the actions above:</p>
+      <ul>
+        <li><code>canva:design:content:read</code> — to read your selected text and the elements on your current page.</li>
+        <li><code>canva:design:content:write</code> — to apply spacing, line breaks, or insert a QR code.</li>
+        <li><code>canva:asset:private:write</code> — to upload the generated QR code image so it can be placed in your design.</li>
+        <li><code>canva:brandkit:read</code> — to offer your Brand Kit colors when choosing QR code colors.</li>
+      </ul>
 
       <h2>5. Children</h2>
       <p>The App is not directed at children under 13 and does not knowingly collect information from them.</p>
