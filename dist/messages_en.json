@@ -1,0 +1,258 @@
+{
+  "+5VGyC": {
+    "defaultMessage": "Add even spacing between paragraphs in a text box.",
+    "description": "One-line description of the paragraph spacing tool."
+  },
+  "3ARtEK": {
+    "defaultMessage": "No text boxes found on this page. Add text to get started.",
+    "description": "Shown when the page has no text boxes."
+  },
+  "3SCg1n": {
+    "defaultMessage": "A set of tools for things Canva can't do on its own. Pick a tool to get started.",
+    "description": "Intro paragraph on the home screen."
+  },
+  "3qNVs2": {
+    "defaultMessage": "All text boxes",
+    "description": "Picker option that applies spacing to every text box."
+  },
+  "3x/9gi": {
+    "defaultMessage": "Flow a paragraph around an overlapping image.",
+    "description": "One-line description of the wrap-text tool."
+  },
+  "7YfW9t": {
+    "defaultMessage": "QR code",
+    "description": "Title of the QR code tool."
+  },
+  "8PgSlJ": {
+    "defaultMessage": "Background color",
+    "description": "Label for the background color picker."
+  },
+  "AdakAt": {
+    "defaultMessage": "Text & Layout Kit",
+    "description": "Name of the app, shown on the home screen."
+  },
+  "C38BIo": {
+    "defaultMessage": "Couldn't find that text box — it may have changed. Try again.",
+    "description": "Shown when the chosen text box no longer matches."
+  },
+  "DZRXPk": {
+    "defaultMessage": "Editing isn't supported in the current design type.",
+    "description": "Shown when the design-editing API isn't supported."
+  },
+  "Ds3uOG": {
+    "defaultMessage": "Pick Circle to flow text along a round image or shape. Auto detects round shapes from their outline; images and frames are treated as boxes.",
+    "description": "Helper text explaining the element-shape control."
+  },
+  "FAM/eh": {
+    "defaultMessage": "Paragraph spacing",
+    "description": "Title of the paragraph spacing tool."
+  },
+  "FU/06T": {
+    "defaultMessage": "Add a margin around the code. Recommended for reliable scanning.",
+    "description": "Helper text for the quiet zone switch."
+  },
+  "FW+H7A": {
+    "defaultMessage": "Enter a URL, choose your colors, and add a vector QR code to your design. Resize it on the canvas without losing quality.",
+    "description": "Intro paragraph explaining what the app does."
+  },
+  "FeMEen": {
+    "defaultMessage": "Add QR code",
+    "description": "Primary button to add the QR code to the design."
+  },
+  "GWD1T0": {
+    "defaultMessage": "{size} px",
+    "description": "Current paragraph gap size, in pixels."
+  },
+  "I2ONbG": {
+    "defaultMessage": "Wrapping removed.",
+    "description": "Confirmation after wrapping is removed."
+  },
+  "I8uyeH": {
+    "defaultMessage": "Box",
+    "description": "Option: treat the element as a rectangle."
+  },
+  "MGBGME": {
+    "defaultMessage": "Auto",
+    "description": "Option: detect the element's shape automatically."
+  },
+  "MJFghl": {
+    "defaultMessage": "No paragraphs to space — a text box needs two or more paragraphs.",
+    "description": "Shown when nothing could be spaced."
+  },
+  "MZY6uT": {
+    "defaultMessage": "Rescan page",
+    "description": "Button that re-reads the page's text boxes."
+  },
+  "OQc57B": {
+    "defaultMessage": "Text wrapped around the element.",
+    "description": "Confirmation after wrapping succeeds."
+  },
+  "OfdE5m": {
+    "defaultMessage": "Spacing applied.",
+    "description": "Confirmation shown after spacing is applied."
+  },
+  "OwbWud": {
+    "defaultMessage": "The overlapping text box is empty.",
+    "description": "Shown when the matched text element has no text."
+  },
+  "Pk2QNe": {
+    "defaultMessage": "Quiet zone",
+    "description": "Switch label for the quiet-zone (margin) toggle."
+  },
+  "PmMxht": {
+    "defaultMessage": "Adding elements isn't supported in the current design type.",
+    "description": "Alert shown when the host design doesn't support inserts."
+  },
+  "Pvctin": {
+    "defaultMessage": "Add a crisp vector QR code to your design.",
+    "description": "One-line description of the QR code tool."
+  },
+  "QMNeoC": {
+    "defaultMessage": "Couldn't find a text box overlapping another element on this page. Move a paragraph over an image, frame, or shape and try again.",
+    "description": "Shown when no overlapping text + element pair is found."
+  },
+  "QwQgbf": {
+    "defaultMessage": "Back to tools",
+    "description": "Accessibility label for the back button on a tool screen."
+  },
+  "SNdGXo": {
+    "defaultMessage": "Applying to all text boxes",
+    "description": "Indicator shown when spacing targets every text box."
+  },
+  "Seok3s": {
+    "defaultMessage": "Letter spacing",
+    "description": "Label for the letter-spacing control."
+  },
+  "V09hHW": {
+    "defaultMessage": "{snippet} · {count, plural, one {# paragraph} other {# paragraphs}}",
+    "description": "A text box option: snippet and paragraph count."
+  },
+  "WMjCwN": {
+    "defaultMessage": "Place a paragraph over an image, frame, or other element so they overlap, then apply. The plugin adds line breaks so the text flows around it.",
+    "description": "Intro/instructions for the wrap-text tool."
+  },
+  "XFmJL5": {
+    "defaultMessage": "URL",
+    "description": "Label for the URL text input."
+  },
+  "XtrVjJ": {
+    "defaultMessage": "Wrap text around image",
+    "description": "Title of the wrap-text tool."
+  },
+  "Y4Hetn": {
+    "defaultMessage": "Apply spacing",
+    "description": "Button that applies paragraph spacing."
+  },
+  "YP7If+": {
+    "defaultMessage": "Element shape",
+    "description": "Label for the control choosing the obstacle's outline."
+  },
+  "YTl9L3": {
+    "defaultMessage": "Size of the blank line, in pixels. Starts at a quarter of the text size.",
+    "description": "Helper text describing the gap size control."
+  },
+  "YV2+Xw": {
+    "defaultMessage": "This tool only works on designs with fixed layouts (such as presentations or social posts), not on docs or whiteboards.",
+    "description": "Shown when the page type doesn't support positioning."
+  },
+  "ZNUm4W": {
+    "defaultMessage": "Remove wrapping",
+    "description": "Button that removes wrap line breaks, keeping paragraphs."
+  },
+  "cWA2Fx": {
+    "defaultMessage": "https://example.com",
+    "description": "Placeholder shown in the URL text input."
+  },
+  "cpj9QM": {
+    "defaultMessage": "Left",
+    "description": "Option: the element is on the left."
+  },
+  "dzfAmJ": {
+    "defaultMessage": "QR code for {url}",
+    "description": "Alt text for the inserted QR image."
+  },
+  "hQwWNW": {
+    "defaultMessage": "Element side",
+    "description": "Label for the control choosing which side the element is on."
+  },
+  "iPNBu9": {
+    "defaultMessage": "Auto",
+    "description": "Option: auto-detect which side the element is on."
+  },
+  "iUwJCR": {
+    "defaultMessage": "Transparent background",
+    "description": "Switch label to make the QR background transparent."
+  },
+  "jpSrDR": {
+    "defaultMessage": "Adds an evenly-sized blank line between paragraphs of the selected text box. Set the gap size, then apply.",
+    "description": "Intro/instructions for the paragraph spacing tool."
+  },
+  "luWO6l": {
+    "defaultMessage": "Text box",
+    "description": "Label for the text-box picker."
+  },
+  "mor0um": {
+    "defaultMessage": "Space between paragraphs",
+    "description": "Label for the paragraph gap size control."
+  },
+  "mq5m7P": {
+    "defaultMessage": "Adding elements isn't supported in the current design.",
+    "description": "Tooltip when add-element APIs aren't supported here."
+  },
+  "n/ydz8": {
+    "defaultMessage": "Couldn't apply spacing.",
+    "description": "Generic error when applying spacing fails."
+  },
+  "ngx0XI": {
+    "defaultMessage": "Advanced: choose text box",
+    "description": "Title of the collapsible advanced-selection section."
+  },
+  "o+MkuK": {
+    "defaultMessage": "Applying to: {snippet}",
+    "description": "Indicator showing which text box spacing targets."
+  },
+  "p+OKwo": {
+    "defaultMessage": "Skip the background — the design behind shows through.",
+    "description": "Helper text for the transparent background switch."
+  },
+  "pKD8q0": {
+    "defaultMessage": "Right",
+    "description": "Option: the element is on the right."
+  },
+  "paAEkt": {
+    "defaultMessage": "Wrapping is approximate — Canva doesn't expose text measurements, so you may need to nudge the result. Re-run after moving things; undo (Ctrl/Cmd+Z) reverts it.",
+    "description": "Caveat explaining that wrapping is approximate."
+  },
+  "r3JCiH": {
+    "defaultMessage": "Auto",
+    "description": "Button that resets the gap size to a quarter of the font size."
+  },
+  "rNDr2M": {
+    "defaultMessage": "Couldn't wrap the text.",
+    "description": "Generic error when wrapping fails."
+  },
+  "tT9uTr": {
+    "defaultMessage": "Foreground color",
+    "description": "Label for the foreground (modules) color picker."
+  },
+  "vRtcOl": {
+    "defaultMessage": "Wrap text",
+    "description": "Button that wraps the text around the element."
+  },
+  "vyOm1Z": {
+    "defaultMessage": "Failed to add QR code to design.",
+    "description": "Generic fallback error when insertion fails."
+  },
+  "w3shpa": {
+    "defaultMessage": "Circle",
+    "description": "Option: treat the element as a circle or ellipse."
+  },
+  "wEHT9F": {
+    "defaultMessage": "Match your text's letter spacing (the Spacing value in Canva's text settings) so lines wrap accurately. Leave at 0 for default spacing.",
+    "description": "Helper text for the letter-spacing control."
+  },
+  "y5J3P/": {
+    "defaultMessage": "Gap around element (px)",
+    "description": "Label for the gutter/spacing control."
+  }
+}
