@@ -31,6 +31,22 @@ export type ApplySpacingResult = {
   blanksTouched: number;
 };
 
+export type SpacingOptions = {
+  /**
+   * Controls where blank lines are inserted:
+   *
+   * - When `true`, a blank line is added after *every* line break — each line is
+   *   treated as its own paragraph. Use this when paragraphs are separated by a
+   *   single line break (no blank lines).
+   * - When `false` (default), spacing is paragraph-aware: if the text already
+   *   separates paragraphs with blank lines, only those gaps are normalised and
+   *   single line breaks within a paragraph are preserved. If the text has no
+   *   blank lines at all, it automatically falls back to spacing every line
+   *   break (so the tool still does something useful).
+   */
+  everyLineBreak?: boolean;
+};
+
 // Canva clamps richtext font size to 1–100px.
 const MIN_FONT_SIZE = 1;
 const MAX_FONT_SIZE = 100;
@@ -71,6 +87,7 @@ export function splitParagraphs(text: string): Paragraph[] {
 export function applyParagraphSpacing(
   target: RichtextEditable,
   blankFontSizePx: number,
+  options: SpacingOptions = {},
 ): ApplySpacingResult {
   const size = clamp(Math.round(blankFontSizePx), MIN_FONT_SIZE, MAX_FONT_SIZE);
 
@@ -87,7 +104,7 @@ export function applyParagraphSpacing(
 
   // Each gap spans from the end of one content paragraph to the start of the
   // next, swallowing any existing newlines / blank paragraphs in between.
-  const gaps: { start: number; end: number; fontRef?: FontRef }[] = [];
+  const allGaps: { start: number; end: number; fontRef?: FontRef }[] = [];
   for (let i = 0; i + 1 < contentParagraphs.length; i++) {
     const before = contentParagraphs[i];
     const after = contentParagraphs[i + 1];
@@ -96,7 +113,25 @@ export function applyParagraphSpacing(
     }
     const start = before.index + before.text.length;
     const end = after.index;
-    gaps.push({ start, end, fontRef: fontRefAt(regions, start - 1) });
+    allGaps.push({ start, end, fontRef: fontRefAt(regions, start - 1) });
+  }
+
+  // A gap longer than a single "\n" already holds a blank line (an empty or
+  // whitespace-only paragraph). A gap of exactly one "\n" is a bare line break.
+  const hasBlankGap = allGaps.some((g) => g.end - g.start > 1);
+
+  // Auto behaviour: when the text already uses blank lines to separate
+  // paragraphs, only resize those existing gaps and leave single line breaks
+  // alone. When it has no blank lines, space every line break instead. The
+  // explicit option forces every-line-break spacing.
+  const spaceEveryBreak = (options.everyLineBreak ?? false) || !hasBlankGap;
+
+  const gaps = spaceEveryBreak
+    ? allGaps
+    : allGaps.filter((g) => g.end - g.start > 1);
+
+  if (gaps.length === 0) {
+    return { changed: false, blanksTouched: 0 };
   }
 
   // 1. Replace every gap with a single empty paragraph ("\n\n"). Apply

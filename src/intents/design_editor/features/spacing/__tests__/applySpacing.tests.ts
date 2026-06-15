@@ -116,6 +116,27 @@ describe("applyParagraphSpacing", () => {
     expect(last.formatting.fontSize).toBe(40);
   });
 
+  it("preserves single line breaks when blank lines already separate paragraphs", () => {
+    // "A" and "B" are one paragraph (single break); a blank line separates "C".
+    const range = new FakeRange("A\nB\n\nC");
+    const result = applyParagraphSpacing(range, 24);
+
+    expect(result.blanksTouched).toBe(1);
+    // The A/B single break is untouched; only the existing blank gap is sized.
+    expect(range.text).toBe("A\nB\n\nC");
+    expect(range.formatCalls).toHaveLength(1);
+    expect(range.formattedChars()).toEqual(["\n"]);
+  });
+
+  it("spaces every line break when the option is set", () => {
+    const range = new FakeRange("A\nB\n\nC");
+    const result = applyParagraphSpacing(range, 24, { everyLineBreak: true });
+
+    expect(result.blanksTouched).toBe(2);
+    expect(range.text).toBe("A\n\nB\n\nC");
+    expect(range.formattedChars()).toEqual(["\n", "\n"]);
+  });
+
   it("does nothing for a single paragraph", () => {
     const range = new FakeRange("Just one paragraph");
     const result = applyParagraphSpacing(range, 24);
